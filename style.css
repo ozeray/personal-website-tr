@@ -53,7 +53,6 @@ body {
 .section__description {
     font-size: 1.8rem;
     font-weight: 600;
-    text-transform: uppercase;
     color: var(--color-primary);
     margin-bottom: 1rem;
 }
@@ -569,7 +568,7 @@ h4 {
 .contact__me {
     padding: 0.2rem 1.5rem 0.1rem;
     text-align: justify;
-    width: 225px;
+    width: 233px;
     font-size: 1.2rem;
 }
 
@@ -677,7 +676,7 @@ span.blockspam {
     }
 
     .slider, .slide {
-        height: 85rem;
+        height: 77rem;
     }
 }
 
@@ -760,7 +759,7 @@ span.blockspam {
 
 @media screen and (max-width: 550px) {
     .slider, .slide {
-        height: 92rem;
+        height: 82rem;
     }
 
     .testimonial__text, .testimonial__title {
@@ -781,13 +780,13 @@ span.blockspam {
 
 @media screen and (max-width: 500px) {
     .slider, .slide {
-        height: 105rem;
+        height: 95rem;
     }
 }
 
 @media screen and (max-width: 450px) {
     .slider, .slide {
-        height: 125rem;
+        height: 111rem;
     }
 
     .footer__logo {
@@ -797,7 +796,7 @@ span.blockspam {
 
 @media screen and (max-width: 400px) {
     .slider, .slide {
-        height: 145rem;
+        height: 115rem;
     }
 
     .section__header {
@@ -815,7 +814,7 @@ span.blockspam {
     }
 
     .slider, .slide {
-        height: 170rem;
+        height: 133rem;
     }
 }
 
