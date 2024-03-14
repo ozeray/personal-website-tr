@@ -28,7 +28,6 @@
     document.querySelector('.nav__links').addEventListener('click', function (evt) {
         const href = evt.target.getAttribute('href');
         if (!!href && href !== '#' && !href.includes('http')) {
-            console.log(href);
             evt.preventDefault();
             const goTo = document.querySelector(href);
             goTo.scrollIntoView({behavior: 'smooth'});
