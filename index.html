@@ -24,10 +24,10 @@
         />
         <ul class="nav__links">
           <li class="nav__item">
-            <a class="nav__link" href="#section--1">Portföyüm</a>
+            <a class="nav__link" href="#section--1">Hizmetler</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#section--2">Hizmetler</a>
+            <a class="nav__link" href="#section--2">Portföyüm</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#section--3">Hakkımda</a>
@@ -55,11 +55,92 @@
                 class="header__img"
                 alt="Flowers"
         />
-        <button class="btn--text btn--scroll-to">Projelerimden seçmeler &DownArrow;</button>
+        <button class="btn--text btn--scroll-to">Sunduğum hizmetler &DownArrow;</button>
       </div>
     </header>
 
     <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Müşterilerime Sağladığım Hizmetler</h2>
+        <h3 class="section__header">
+          Sisteminizi benimle birlikte tasarlayıp geliştirmek ister misiniz?
+        </h3>
+      </div>
+
+      <div class="services">
+        <div class="services__tab-container">
+          <button
+                  class="btn services__tab services__tab--1 services__tab--active"
+                  data-tab="1"
+          >
+            <span>01</span>Yazılım Geliştirme
+          </button>
+          <button class="btn services__tab services__tab--2" data-tab="2">
+            <span>02</span>Sistem Tasarımı ve Mimarisi
+          </button>
+          <button class="btn services__tab services__tab--3" data-tab="3">
+            <span>03</span>Eğitim
+          </button>
+        </div>
+        <div class="services__content services__content--1 services__content--active">
+          <div class="services__icon services__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-code"></use>
+            </svg>
+          </div>
+          <h5 class="services__header">
+            Kurumsal yazılım, web uygulamaları, mikro-servisler
+          </h5>
+          <p>
+            16 yılı aşan yazılım mühendislik deneyimimle karşınızdayım: Java, web programlama (HTML, CSS, JavaScript, vb.) ve tam katmanlı geliştirme (Maven, Spring, REST, Docker, Hibernate, SQL, vb.).
+            <br />
+            Kurumsal uygulamalar, mikro-servisler, ağ ve HTTP mimarisi, arka katman ve ön yüz geliştirme, veritabanları ve uygulama sunucuları, konteynerleştirme ve orkestrasyon, etki alanı ve test güdümlü yazılım geliştirme, yazılım geliştirme yaşam döngüsü, sürekli entegrasyon ve çevik programlama konularında birikim sahibiyim.
+            <br />
+            Yazılım projelerinizi tamamlamanıza yardım etmek için doğru kişi olduğuma inanıyorum.
+            <br />
+            Projelerimin ayrıntılarına, becerilerimin tamamına ve çalışma geçmişime <a href="https://www.linkedin.com/in/ahmet-ya%C5%9Far-%C3%B6zer-b31a4663" target="_blank">LinkedIn</a> veya
+            <a href="https://www.upwork.com/freelancers/~016b32aae9fbd3522a" target="_blank">Upwork</a> profillerimden ulaşabilirsiniz.
+          </p>
+        </div>
+
+        <div class="services__content services__content--2">
+          <div class="services__icon services__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-layout"></use>
+            </svg>
+          </div>
+          <h5 class="services__header">
+            "Tüm işlerin yüzde 80'i insanlarla iletişim kurmaktan ibarettir"
+          </h5>
+          <p>
+            Geçmiş yıllar içinde kendi katmanlı mimarilerimi geliştirdim ve bunları çeşitli projelerde kullandım. Modern teknoloji trendleri ve bulut bilişim alanlarında da yetkinliğimi artırdım.
+            <br />
+            Projeleri tamamlamak ve hedeflere ulaşmak üzere şirketlerin bünyesindeki teknik personelle ve teknik olmayan çalışanlarla rahatlıkla iletişim kurabilen birisiyim.
+            <br />
+            Eski uygulamaların modernizasyonunda da aktif rol üstlendim.
+          </p>
+        </div>
+        <div class="services__content services__content--3">
+          <div class="services__icon services__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-sun"></use>
+            </svg>
+          </div>
+          <h5 class="services__header">
+            Paylaşmaya, yardım etmeye, destek olmaya ve öğretmeye duyulan heyecan
+          </h5>
+          <p>
+            Yıllar boyu, görece az deneyimli sevgili iş arkadaşlarıma eğitim, danışmanlık, destek ve yönlendirme sağlamakla tanındım.
+            <br />
+            Çalıştığım yerlerde bir çeşit 'tekno-psikolojik' misyon yürüterek derin bir tatminiyet yaşadım.
+            <br />
+            Eğitim karşımdaki kişiye sadece bilgi aktarmak değildi; konuyu sindirebilmesi için onu hazırlayarak sarf ettiğim sanatsal bir çabaydı..
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
       <div class="section__title">
         <h2 class="section__description">Portföyüm</h2>
         <h3 class="section__header">
@@ -158,87 +239,6 @@
             Pig oyunu olarak bilinen uygulamayı geliştirmek için HTML, CSS ve JavaScript kulllandık. İki oyuncu zar atarak skor biriktirir ve 50 puana ilk ulaşan oyuncu oyunu kazanır.
             <br />
             Arkadaşlarınızla oynamak isterseniz, <a href="https://ozeray.github.io/pig-game" target="_blank">tıklayabilirsiniz</a> :)
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="section--2">
-      <div class="section__title">
-        <h2 class="section__description">Müşterilerime Sağladığım Hizmetler</h2>
-        <h3 class="section__header">
-          Sisteminizi benimle birlikte tasarlayıp geliştirmek ister misiniz?
-        </h3>
-      </div>
-
-      <div class="services">
-        <div class="services__tab-container">
-          <button
-            class="btn services__tab services__tab--1 services__tab--active"
-            data-tab="1"
-          >
-            <span>01</span>Yazılım Geliştirme
-          </button>
-          <button class="btn services__tab services__tab--2" data-tab="2">
-            <span>02</span>Sistem Tasarımı ve Mimarisi
-          </button>
-          <button class="btn services__tab services__tab--3" data-tab="3">
-            <span>03</span>Eğitim
-          </button>
-        </div>
-        <div class="services__content services__content--1 services__content--active">
-          <div class="services__icon services__icon--1">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-code"></use>
-            </svg>
-          </div>
-          <h5 class="services__header">
-            Kurumsal yazılım, web uygulamaları, mikro-servisler
-          </h5>
-          <p>
-            16 yılı aşan yazılım mühendislik deneyimimle karşınızdayım: Java, web programlama (HTML, CSS, JavaScript, vb.) ve tam katmanlı geliştirme (Maven, Spring, REST, Docker, Hibernate, SQL, vb.).
-            <br />
-            Kurumsal uygulamalar, mikro-servisler, ağ ve HTTP mimarisi, arka katman ve ön yüz geliştirme, veritabanları ve uygulama sunucuları, konteynerleştirme ve orkestrasyon, etki alanı ve test güdümlü yazılım geliştirme, yazılım geliştirme yaşam döngüsü, sürekli entegrasyon ve çevik programlama konularında birikim sahibiyim.
-            <br />
-            Yazılım projelerinizi tamamlamanıza yardım etmek için doğru kişi olduğuma inanıyorum.
-            <br />
-            Projelerimin ayrıntılarına, becerilerimin tamamına ve çalışma geçmişime <a href="https://www.linkedin.com/in/ahmet-ya%C5%9Far-%C3%B6zer-b31a4663" target="_blank">LinkedIn</a> veya
-            <a href="https://www.upwork.com/freelancers/~016b32aae9fbd3522a" target="_blank">Upwork</a> profillerimden ulaşabilirsiniz.
-          </p>
-        </div>
-
-        <div class="services__content services__content--2">
-          <div class="services__icon services__icon--2">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-layout"></use>
-            </svg>
-          </div>
-          <h5 class="services__header">
-            "Tüm işlerin yüzde 80'i insanlarla iletişim kurmaktan ibarettir"
-          </h5>
-          <p>
-            Geçmiş yıllar içinde kendi katmanlı mimarilerimi geliştirdim ve bunları çeşitli projelerde kullandım. Modern teknoloji trendleri ve bulut bilişim alanlarında da yetkinliğimi artırdım.
-            <br />
-            Projeleri tamamlamak ve hedeflere ulaşmak üzere şirketlerin bünyesindeki teknik personelle ve teknik olmayan çalışanlarla rahatlıkla iletişim kurabilen birisiyim.
-            <br />
-            Eski uygulamaların modernizasyonunda da aktif rol üstlendim.
-          </p>
-        </div>
-        <div class="services__content services__content--3">
-          <div class="services__icon services__icon--3">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-sun"></use>
-            </svg>
-          </div>
-          <h5 class="services__header">
-            Paylaşmaya, yardım etmeye, destek olmaya ve öğretmeye duyulan heyecan
-          </h5>
-          <p>
-            Yıllar boyu, görece az deneyimli sevgili iş arkadaşlarıma eğitim, danışmanlık, destek ve yönlendirme sağlamakla tanındım.
-            <br />
-            Çalıştığım yerlerde bir çeşit 'tekno-psikolojik' misyon yürüterek derin bir tatminiyet yaşadım.
-            <br />
-            Eğitim karşımdaki kişiye sadece bilgi aktarmak değildi; konuyu sindirebilmesi için onu hazırlayarak sarf ettiğim sanatsal bir çabaydı..
           </p>
         </div>
       </div>
