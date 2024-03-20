@@ -81,7 +81,7 @@
         }
     };
 
-    const sectionObserver = new IntersectionObserver(revealSection, {root: null, threshold: 0.15, rootMargin: '-10px'});
+    const sectionObserver = new IntersectionObserver(revealSection, {root: null, threshold: 0, rootMargin: '-30px'});
     allSections.forEach(section => {
         sectionObserver.observe(section);
         section.classList.add('section--hidden');
@@ -103,7 +103,7 @@
         observer.unobserve(img);
     };
 
-    const imgObserver = new IntersectionObserver(loadImg, {root: null, threshold: 0, rootMargin: '500px'}); //Load before scroll
+    const imgObserver = new IntersectionObserver(loadImg, {root: null, threshold: 0, rootMargin: '500px'});
     lazyImages.forEach(img => imgObserver.observe(img));
 })();
 

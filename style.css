@@ -291,6 +291,7 @@ h4 {
 .services__tab {
     margin-right: 2.5rem;
     transform: translateY(-50%);
+    z-index: 99;
 }
 
 .services__tab span {
@@ -355,8 +356,13 @@ h4 {
     width: 2.75rem;
 }
 
-.services__content p {
+.services__content div.section__text {
     grid-column: 2;
+}
+
+.projects__project div.section__text ul,
+.services__content div.section__text ul {
+    margin-left: 3rem;
 }
 
 .services__icon--1 {
@@ -565,23 +571,6 @@ h4 {
     font-size: 1.3rem;
 }
 
-.contact__me {
-    padding: 0.2rem 1.5rem 0.1rem;
-    text-align: justify;
-    width: 233px;
-    font-size: 1.2rem;
-}
-
-.contact__me a {
-    color: var(--color-primary-darker);
-}
-
-.contact__me-title {
-    font-size: 1.7rem;
-    font-weight: 400;
-    color: inherit;
-}
-
 .hidden {
     visibility: hidden;
     opacity: 0;
@@ -591,9 +580,30 @@ span.blockspam {
     display: none;
 }
 
+.contact__form {
+    display: flex;
+    justify-content: center;
+    height: 120rem;
+    overflow: hidden;
+}
+
+iframe {
+    height: 110rem;
+}
+
 @media screen and (max-width: 1300px) {
     .nav {
         padding: 0;
+    }
+
+    .projects {
+        grid-template-columns: auto;
+        gap: 1rem 4rem;
+    }
+
+    .projects__project {
+        width: 100%;
+        margin-bottom: 6rem;
     }
 }
 
@@ -617,14 +627,13 @@ span.blockspam {
 }
 
 @media screen and (max-width: 1000px) {
-    .projects {
-        grid-template-columns: auto;
-        gap: 1rem 4rem;
+    h1 {
+        font-size: 2.5rem;
     }
 
-    .projects__project {
-        width: 100%;
-        margin-bottom: 6rem;
+    h4 {
+        line-height: 3rem;
+        font-size: 2rem;
     }
 
     .section__title {
@@ -634,6 +643,10 @@ span.blockspam {
 
     .services {
         padding: 0 1rem;
+    }
+
+    .projects__header {
+        font-size: 1.7rem;
     }
 }
 
@@ -654,14 +667,6 @@ span.blockspam {
     .nav__links {
         flex-flow: column;
         align-items: flex-start;
-    }
-
-    .contact__me {
-        padding: 0 0.8rem;
-    }
-
-    .contact__me-title {
-        display: none;
     }
 
     .services__tab {
@@ -698,6 +703,10 @@ span.blockspam {
         margin: 0;
     }
 
+    .services__content div.section__text {
+        grid-column: 1;
+    }
+
     .services__tab {
         font-size: 1.3rem;
         margin-right: 0.5rem;
@@ -708,7 +717,7 @@ span.blockspam {
         grid-template-columns: 1fr;
     }
 
-    .services__content p {
+    .services__content div.section__text {
         grid-column: 1;
     }
 
@@ -724,7 +733,7 @@ span.blockspam {
 @media screen and (max-width: 600px) {
     .nav__logo
     {
-        transform: scale(4.5);
+        transform: scale(6);
         height: 6rem;
         position: relative;
     }
